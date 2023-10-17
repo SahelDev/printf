@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 	
 	va_start(ch, format);
 
-	if (!format || (format[0] == '%' && !format[1])
+	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
 
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
@@ -61,29 +61,6 @@ int _printf(const char *format, ...)
 			case '%':
 				len += print_percent(ch, &p3, &p2, &f);
 				break;
-/**          case 'd':
-                return print_int;
-            case 'i':
-                return print_int;
-            case 'b':
-                return print_binary;
-            case 'u':
-                return print_unsigned;
-            case 'o':
-                return print_octal;
-            case 'x':
-                return print_hex;
-            case 'X':
-                return print_HEX;
-            case 'S':
-                return print_S;
-            case 'p':
-                return print_address;
-            case 'r':
-                return print_rev;
-            case 'R':
-                return print_rot13;
-**/
 			default:
 				len += to_print_from(start, p, p3.l_modif || p3.h_modif ? p - 1 : 0);
 				break;
@@ -93,6 +70,6 @@ int _printf(const char *format, ...)
 
 	/*_putchar(-1);*/
 	va_end(ch);
-	
+
 	return (len);
 }

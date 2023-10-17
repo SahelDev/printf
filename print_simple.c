@@ -1,13 +1,13 @@
 #include "main.h"
 
-
 /**
  * _puts - prints a string to stdout
  * @str: pointer to the string to print
+ *
  */
 int _puts(char *str)
 {
-	char *a = str;/*declaration of variables*/
+	char *a = str;
 
 	while (*str)
 		_putchar(*str++);
@@ -15,7 +15,7 @@ int _puts(char *str)
 }
 
 /**
-* _strlen - returns the length of a string 
+* _strlen - returns the length of a string
 * @s: the string whose length to check
 *
 * Return: integer length of string
@@ -23,7 +23,8 @@ int _puts(char *str)
 int _strlen(char *s)
 {
 	int i = 0;
-	while (*s++) 
+
+	while (*s++)
 		i++;
 	return (i);
 }
@@ -42,20 +43,21 @@ int _putchar(char c)
 
 /**
 * to_print_from prints a range of char addresses
-* @start: starting address 
+* @start: starting address
 * @stop: stopping address
 * @except: except address
 *
 *Return: number bytes printed
 */
-int to_print_from(char *start, char *stop, char *except){
-    int sum = 0;
+int to_print_from(char *start, char *stop, char *except)
+{
+	int sum = 0;
 
-    while (start <= stop)
-    {
-        if (start != except)
-            sum += _putchar(*start);
-        start++;
-    }
-    return (sum);
+	while (start <= stop)
+	{
+		if (start != except)
+			sum += _putchar(*start);
+		start++;
+	}
+	return (sum);
 }

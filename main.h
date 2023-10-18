@@ -80,4 +80,15 @@ int print_char(va_list ch, wid_per_2 *p2, flags_5 *f);
 int print_percent(va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
 int print_string(va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
 
+/* print_int.c*/
+int print_int (va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_number (char *str, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+char *convert (long int num, int base, int flags, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_unsigned (va_list ap, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_address (va_list ap, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_number_right_shift (char *str,  paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_number_left_shift (char *str,  paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+
+
+
 #endif

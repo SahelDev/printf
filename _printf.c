@@ -61,6 +61,13 @@ int _printf(const char *format, ...)
 			case '%':
 				len += print_percent(ch, &p3, &p2, &f);
 				break;
+	        case 'd':
+                len += print_int(ch, &p3, &p2, &f);
+				break;
+            case 'i':
+                len += print_int;(ch, &p3, &p2, &f);
+				break;
+
 			default:
 				len += to_print_from(start, p, p3.l_modif || p3.h_modif ? p - 1 : 0);
 				break;

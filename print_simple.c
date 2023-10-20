@@ -1,5 +1,6 @@
 #include "main.h"
 
+<<<<<<< HEAD
 
 /**
  * _puts - prints a string to stdout
@@ -9,6 +10,16 @@
 int _puts(char *str)
 {
 	char *a = str;/*declaration of variables*/
+=======
+/**
+ * _puts - prints a string to stdout
+ * @str: pointer to the string to print
+ *
+ */
+int _puts(char *str)
+{
+	char *a = str;
+>>>>>>> e52428ea93381160201d14c858a9df0db84860a9
 
 	while (*str)
 		_putchar(*str++);
@@ -29,6 +40,10 @@ int _strlen(char *s)
 		i++;
 	return (i);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e52428ea93381160201d14c858a9df0db84860a9
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -46,6 +61,10 @@ int _putchar(char c)
 * @start: starting address
 * @stop: stopping address
 * @except: except address
+<<<<<<< HEAD
+=======
+*
+>>>>>>> e52428ea93381160201d14c858a9df0db84860a9
 *Return: number bytes printed
 */
 int to_print_from(char *start, char *stop, char *except)

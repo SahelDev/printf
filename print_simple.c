@@ -4,6 +4,7 @@
 /**
  * _puts - prints a string to stdout
  * @str: pointer to the string to print
+ * Return:void
  */
 int _puts(char *str)
 {
@@ -15,7 +16,7 @@ int _puts(char *str)
 }
 
 /**
-* _strlen - returns the length of a string 
+* _strlen - returns the length of a string
 * @s: the string whose length to check
 *
 * Return: integer length of string
@@ -23,11 +24,11 @@ int _puts(char *str)
 int _strlen(char *s)
 {
 	int i = 0;
-	while (*s++) 
+
+	while (*s++)
 		i++;
 	return (i);
 }
-
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -42,20 +43,20 @@ int _putchar(char c)
 
 /**
 * to_print_from prints a range of char addresses
-* @start: starting address 
+* @start: starting address
 * @stop: stopping address
 * @except: except address
-*
 *Return: number bytes printed
 */
-int to_print_from(char *start, char *stop, char *except){
-    int sum = 0;
+int to_print_from(char *start, char *stop, char *except)
+{
+	int sum = 0;
 
-    while (start <= stop)
-    {
-        if (start != except)
-            sum += _putchar(*start);
-        start++;
-    }
-    return (sum);
+	while (start <= stop)
+	{
+		if (start != except)
+			sum += _putchar(*start);
+		start++;
+	}
+	return (sum);
 }

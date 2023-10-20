@@ -1,10 +1,4 @@
 #include "main.h"
-#include<stdarg.h>
-#include<stdio.h>
-#include<string.h>
-#include<limits.h>
-#include<unistd.h>
-#include<ctype.h>
 
 
 /**

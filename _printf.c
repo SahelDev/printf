@@ -1,11 +1,5 @@
 #include "main.h"
-#include<stdarg.h>
-#include<stdio.h>
-#include<string.h>
-#include<limits.h>
-#include<assert.h>
-#include<unistd.h>
-#include<ctype.h>
+
 
 /**
  * _printf - function that produces output according to a format

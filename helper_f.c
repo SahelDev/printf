@@ -1,11 +1,6 @@
 #include "main.h"
 #include<stdarg.h>
-#include<stdio.h>
-#include<string.h>
-#include<limits.h>
-#include<assert.h>
-#include<unistd.h>
-#include<ctype.h>
+
 /**
  * Fmt_put- prints characters
  * @str:P1

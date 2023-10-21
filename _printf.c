@@ -29,8 +29,8 @@ int _printf(const char *format, ...)
 
 		if (*p != '%')
 		{
-		  len += _putchar(*p);
-		  continue;
+			len += _putchar(*p);
+			continue;
 		}
 		start = p;
 		p++;
@@ -64,9 +64,12 @@ int _printf(const char *format, ...)
 		case 'i':
 			len += print_int(ch, &p3, &p2, &f);
 			break;
-	case 'b':
-	  len += print_unsigned(ch, &p3, &p2, &f);
-	  break;
+		case 'b':
+			len += print_binary(ch, &p3, &p2, &f);
+			break;
+		case 'u':
+			len += print_unsigned(ch, &p3, &p2, &f);
+			break;
 		default:
 			len += to_print_from(start, p, p3.l_modif || p3.h_modif ? p - 1 : 0);
 			break;

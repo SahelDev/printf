@@ -92,5 +92,9 @@ int print_address(va_list ap, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
 int print_number_right_shift(char *str,  paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
 int print_number_left_shift(char *str,  paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
 
+/* printf_rest.c */
+int print_binary(va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+
+
 
 #endif

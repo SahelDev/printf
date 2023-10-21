@@ -88,6 +88,9 @@ int _printf(const char *format, ...)
 		case 'R':
 			len += print_rot13(ch, &p3, &p2, &f);
 			break;
+		case 'p':
+			len += print_address(ch, &p3, &p2, &f);
+			break;
 		default:
 			len += to_print_from(start, p, p3.l_modif || p3.h_modif ? p - 1 : 0);
 			break;

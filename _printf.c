@@ -12,9 +12,7 @@ int _printf(const char *format, ...)
 	flags_5 f;
 	wid_per_2 p2;
 	paramets_3 p3;
-
 	va_list ch;
-	
 	va_start(ch, format);
 
 	if (!format || (format[0] == '%' && !format[1]))
@@ -31,10 +29,9 @@ int _printf(const char *format, ...)
 
 		if (*p != '%')
 		{
-			len += _putchar(*p);
-			continue;
-        }
-
+		  len += _putchar(*p);
+		  continue;
+		}
 		start = p;
 		p++;
 
@@ -50,28 +47,27 @@ int _printf(const char *format, ...)
 		if (modif_get(p, &p3))
 			p++;
 
-		switch (*p)
-		{
-			case 'c':
-				len += print_char(ch, &p2, &f);
-				break;
-			case 's':
-				len += print_string(ch, &p3, &p2, &f);
-				break;
-			case '%':
-				len += print_percent(ch, &p3, &p2, &f);
-				break;
-	        case 'd':
-                len += print_int(ch, &p3, &p2, &f);
-				break;
-            case 'i':
-                len += print_int(ch, &p3, &p2, &f);
-				break;
-
-			default:
-				len += to_print_from(start, p, p3.l_modif || p3.h_modif ? p - 1 : 0);
-				break;
-		}
+	switch (*p)
+	{
+		case 'c':
+			len += print_char(ch, &p2, &f);
+			break;
+		case 's':
+			len += print_string(ch, &p3, &p2, &f);
+			break;
+		case '%':
+			len += print_percent(ch, &p3, &p2, &f);
+			break;
+		case 'd':
+			len += print_int(ch, &p3, &p2, &f);
+			break;
+		case 'i':
+			len += print_int(ch, &p3, &p2, &f);
+			break;
+		default:
+			len += to_print_from(start, p, p3.l_modif || p3.h_modif ? p - 1 : 0);
+			break;
+	}
 
     }
 

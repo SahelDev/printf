@@ -64,7 +64,7 @@ int _printf(const char *format, ...)
 		case 'i':
 			len += print_int(ch, &p3, &p2, &f);
 			break;
-	case 'd':
+	case 'b':
 	  len += print_unsigned(ch, &p3, &p2, &f);
 	  break;
 		default:

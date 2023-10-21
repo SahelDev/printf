@@ -94,6 +94,12 @@ int print_number_left_shift(char *str,  paramets_3 *p3, wid_per_2 *p2, flags_5 *
 
 /* printf_rest.c */
 int print_binary(va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_hex(va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_HEX(va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_octal(va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_SS(va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_rev(va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
+int print_rot13(va_list ch, paramets_3 *p3, wid_per_2 *p2, flags_5 *f);
 
 
 

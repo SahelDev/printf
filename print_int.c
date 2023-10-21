@@ -111,7 +111,7 @@ char *convert (long num, int base, int flags, paramets_3 *p3, wid_per_2 *p2, fla
 * @params: the parameters struct
 * Return: bytes printed
 */
-int print_unsigned (va_list ap, paramets_3 *p3, wid_per_2 *p2, flags_5 *f)
+int print_unsigned(va_list ap, paramets_3 *p3, wid_per_2 *p2, flags_5 *f)
 {
 	unsigned long l;
 	if (p3->l_modif)
